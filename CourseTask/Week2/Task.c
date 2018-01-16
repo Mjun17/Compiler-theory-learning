@@ -107,7 +107,7 @@ int main()
             if(str_save_len > 0)
             {
               str[str_save_len] = '\0';
-              Process_word(str,str_save_len,curr_row,i+1);
+              Process_word(str,str_save_len,curr_row,i+1-str_save_len);
               str_save_len = 0;
             }
             break;
@@ -117,7 +117,7 @@ int main()
             if(str_save_len > 0)
             {
               str[str_save_len] = '\0';
-              Process_word(str,str_save_len,curr_row,i+1);
+              Process_word(str,str_save_len,curr_row,i+1-str_save_len);
               str_save_len = 0;
             }
             break;
